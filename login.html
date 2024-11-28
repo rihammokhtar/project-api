@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/all.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+        <div class="container d-flex justify-content-around align-items-center p-2 mb-2">
+            <a class="navbar-brand" href="index.html">
+                <i class="fa-brands fa-cloudversify fs-1 p-1 text-warning"></i>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="INGRED.html">Ingrediant</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="area.html">Area</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="category.html">Category</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid mt-5 login">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <h2 class="text-center mb-5 text-white">Contact Us</h2>
+                <form id="loginForm">
+                    <div class="row">
+                        <div class="mb-3 col-md-6">
+                            <input type="text" class="form-control" id="demo1" placeholder="please enter your name" name="name" required oninput="validationname()">
+                            <p class="alert alert-danger  d-none" id="name">Special characters and numbers not allowed </p>
+                        </div>
+    
+                        <div class="mb-3 col-md-6">
+                            
+                            <input type="number" class="form-control" id="age"  placeholder="please enter your age" name="age" required>
+                        </div>
+                    </div>
+<div class="row">
+    <div class="mb-3 col-md-6 ">
+        <input type="tel" class="form-control " id="phone" name="phone"  placeholder="please enter your email" required>
+        
+    </div>
+
+    <div class="mb-3 col-md-6">
+        <input type="email" class="form-control" id="email" name="email"  placeholder="please enter your email" required oninput="validationemail()">
+        <p class="alert alert-danger d-none" id="email">Special characters and numbers not allowed </p>
+
+    </div>
+</div>
+                   <div class="row">
+                    
+                    <div class="mb-3 col-md-6">
+                        
+                        <input type="password" class="form-control" id="demo3" name="password"  placeholder="please enter your password" required oninput="validationpass()">
+        <p class="alert alert-danger d-none " id="pass">Special characters and numbers not allowed </p>
+
+                    </div>
+                    
+                    <div class="mb-3 col-md-6">
+                        
+                        <input type="password" class="form-control " id="" name="password"  placeholder="please confirm password" required >
+
+                    </div>
+                   </div>
+
+
+                    <button type="" class="btn btn-primary m-auto " onclick="addpersonaldata()">submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+<script src="./js/jquery-3.7.1.min.js"></script>
+
+<script src="./js/login.js"></script>
+<script src="./js/bootstrap.bundle.min.js"></script>
+
+
+
+</body>
+</html>
